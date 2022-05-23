@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Test Multiplex</title>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./src/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="./src/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="./src/reveal.js/plugin/highlight/monokai.css"/></head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Test Multiplex</h1><p class="date">Created: 2022-05-23 Mon 12:18</p>
+</section>
+
+
+
+<section>
+<section id="slide-org02f3f6f">
+<h2 id="org02f3f6f">Slide 1</h2>
+<p>
+This is the first slide
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgf04a71d">
+<h2 id="orgf04a71d">Slide 2</h2>
+<p>
+This is the second slide
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="./src/reveal.js/dist/reveal.js"></script>
+<script src="./src/reveal.js/plugin/highlight/highlight.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealHighlight, multiplex],
+multiplex: {
+    secret: '16533036903798910921', // null if client
+    id: 'fb6fc780b6365a7f', // id, obtained from socket.io server
+    url: 'https://reveal-multiplex.glitch.me' // Location of socket.io server
+},
+dependencies: [ { src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true }, { src: 'https://reveal-multiplex.glitch.me/master.js', async: true } ]
+});
+
+</script>
+</body>
+</html>
