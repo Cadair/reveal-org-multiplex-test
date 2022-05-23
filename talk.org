@@ -1,0 +1,24 @@
+#+REVEAL_ROOT: ./src/reveal.js/
+#+REVEAL_HIGHLIGHT_CSS: %r/plugin/highlight/monokai.css
+#+REVEAL_THEME: simple
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_MULTIPLEX_ID: fb6fc780b6365a7f
+#+REVEAL_MULTIPLEX_SECRET: 16533036903798910921
+#+REVEAL_MULTIPLEX_URL: https://reveal-multiplex.glitch.me
+#+REVEAL_PLUGINS: (highlight multiplex)
+
+#+TITLE: Test Multiplex
+
+
+
+* Slide 1
+
+
+This is the first slide
+
+
+* Slide 2
+
+This is the second slide
